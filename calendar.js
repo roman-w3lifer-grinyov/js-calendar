@@ -7,9 +7,9 @@
  *
  * ``` js
  * var jsCalendar = new JsCalendar();
- * var jsCalendarMarkup = jsCalendar.get().markup;
+ * var jsCalendarWrapper = jsCalendar.get().wrapper;
  * var jsCalendarTarget = document.getElementById('js-calendar-target');
- * jsCalendarTarget.appendChild(jsCalendarMarkup);
+ * jsCalendarTarget.appendChild(jsCalendarWrapper);
  * ```
  *
  * ## Configuration
@@ -82,7 +82,7 @@
  *
  * It returns an object, which have the following public properties:
  *
- * - `markup HTMLDivElement` — HTML calendar;
+ * - `wrapper HTMLDivElement` — the wrapper of the calendar;
  * - `prevTimestamp Number` — the timestamp for the prev period;
  * - `nextTimestamp Number` — the timestamp for the next period.
  *
@@ -338,7 +338,7 @@ JsCalendar.prototype._shiftWeekDayAbbrs = function () {
  * For more details see DocBlock of the class itself.
  * @param {Number} [numberOfMonths=6]
  * @param {Number} [timestamp=new Date()]
- * @return {Object} Properties: markup, prevTimestamp, nextTimestamp.
+ * @return {Object} Properties: wrapper, prevTimestamp, nextTimestamp.
  */
 JsCalendar.prototype.get = function (numberOfMonths, timestamp) {
 
@@ -370,7 +370,7 @@ JsCalendar.prototype.get = function (numberOfMonths, timestamp) {
   wrapper.innerHTML = calendar;
 
   return {
-    markup: wrapper,
+    wrapper: wrapper,
     prevTimestamp: prevTimestamp,
     nextTimestamp: nextTimestamp
   };

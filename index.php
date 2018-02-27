@@ -12,9 +12,9 @@
     <script>
       window.addEventListener('DOMContentLoaded', function () {
         var jsCalendar = new JsCalendar();
-        var jsCalendarMarkup = jsCalendar.get().markup;
+        var jsCalendarWrapper = jsCalendar.get().wrapper;
         var jsCalendarTarget = document.getElementById('js-calendar-target');
-        jsCalendarTarget.appendChild(jsCalendarMarkup);
+        jsCalendarTarget.appendChild(jsCalendarWrapper);
       });
     </script>
 </head>
