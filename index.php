@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <title>Calendar</title>
-    <script src="calendar.js?v=<?= filemtime(__DIR__ . '/calendar.js') ?>"></script>
+    <script src="js-calendar.js?v=<?= filemtime(__DIR__ . '/js-calendar.js') ?>"></script>
     <script>
       window.addEventListener('DOMContentLoaded', function () {
         var jsCalendar = new JsCalendar();
