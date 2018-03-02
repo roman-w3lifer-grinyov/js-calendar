@@ -298,7 +298,7 @@ JsCalendar.prototype._getMonthMarkup = function (year, month) {
     day =
       matrix[i] === this._today
         ?
-          '<span class="day" class="today">' +
+          '<span class="day today">' +
             day +
           '</span>'
         : '<span class="day">' + day + '</span>';
