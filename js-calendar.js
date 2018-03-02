@@ -1,134 +1,6 @@
 ;'use strict';
 
 /**
- * # JsCalendar
- *
- * ## Example
- *
- * ``` js
- * var jsCalendar = new JsCalendar();
- * var jsCalendarWrapper = jsCalendar.get().wrapper;
- * var jsCalendarTarget = document.getElementById('js-calendar-target');
- * jsCalendarTarget.appendChild(jsCalendarWrapper);
- * ```
- *
- * ## Configuration
- *
- * ``` js
- * // The default configuration
- *
- * var jsCalendar = new JsCalendar({
- *   language: 'en',
- *   monthNames: [
- *     'January',
- *     'February',
- *     'March',
- *     'April',
- *     'May',
- *     'June',
- *     'July',
- *     'August',
- *     'September',
- *     'October',
- *     'November',
- *     'December'
- *   ],
- *   weekDayAbbrs: [
- *     'Mon',
- *     'Tue',
- *     'Wed',
- *     'Thu',
- *     'Fri',
- *     'Sat',
- *     'Sun'
- *   ],
- *   firstDayOfWeek: 1
- * });
- *
- * // The example of custom configuration
- *
- * var jsCalendar = new JsCalendar({
- *   language: 'ru',
- *   monthNames: [
- *     'Январь',
- *     'Февраль',
- *     'Март',
- *     'Апрель',
- *     'Май',
- *     'Июнь',
- *     'Июль',
- *     'Август',
- *     'Сентябрь',
- *     'Октябрь',
- *     'Ноябрь',
- *     'Декабрь'
- *   ],
- *   weekDayAbbrs: [
- *     'Пн',
- *     'Вт',
- *     'Ср',
- *     'Чт',
- *     'Пт',
- *     'Сб',
- *     'Вс'
- *   ],
- *   firstDayOfWeek: 7
- * });
- * ```
- *
- * ## `get()` method
- *
- * This method is the main public method in this class.
- *
- * It returns an object, which have the following public properties:
- *
- * - `wrapper HTMLDivElement` — the wrapper of the calendar;
- * - `prevTimestamp Number` — the timestamp for the prev period;
- * - `nextTimestamp Number` — the timestamp for the next period.
- *
- * ## Example of HTML calendar
- *
- * ``` js
- * <div class="js-calendar">
- *   <div class="month-box" data-month-number="2">
- *     <table>
- *       <caption>
- *         <span class="month-title">
- *           <span class="month-name">February</span>
- *           <span class="year-name">2018</span>
- *         </span>
- *       </caption>
- *       <tr>
- *         <th>Mon
- *         <th>Tue
- *         <th>Wed
- *         <th>Thu
- *         <th>Fri
- *         <th>Sat
- *         <th>Sun
- *       </tr>
- *       <tr>
- *         <td data-unix-timestamp="-259200" class="other-month">
- *           <span class="day">29</span>
- *         <td data-unix-timestamp="-172800" class="other-month">
- *           <span class="day">30</span>
- *         <td data-unix-timestamp="-86400" class="other-month">
- *           <span class="day">31</span>
- *         <td data-unix-timestamp="0">
- *           <span class="day">1</span>
- *         <td data-unix-timestamp="86400">
- *           <span class="day">2</span>
- *         <td data-unix-timestamp="172800">
- *           <span class="day">3</span>
- *         <td data-unix-timestamp="259200">
- *           <span class="day">4</span>
- *       ...
- *     </table>
- *   </div>
- *   ...
- * </div>
- * ```
- *
  * @constructor
  *
  * @param {Object} [config={}]
@@ -141,6 +13,8 @@
  * @see _monthNames
  * @see _weekDayAbbrs
  * @see _firstDayOfWeek
+ *
+ * @see README.md Usage.
  */
 function JsCalendar(config) {
 
