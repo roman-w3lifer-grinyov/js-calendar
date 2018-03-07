@@ -4,10 +4,12 @@
  * @constructor
  *
  * @param {Object} [config={}]
- * @param {String} config.language
- * @param {Array}  config.monthNames
- * @param {Array}  config.weekDayAbbrs
- * @param {Number} config.firstDayOfWeek
+ * @param {String} [config.language='en']
+ * @param {Array}  [config.monthNames]       The default value depends on the
+ *                                           language.
+ * @param {Array}  [config.weekDayAbbrs]     The Default value depends on the
+ *                                           language.
+ * @param {Number} [config.firstDayOfWeek=1]
  *
  * @see _language
  * @see _monthNames
