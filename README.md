@@ -97,6 +97,8 @@ var jsCalendar = new JsCalendar({
 
 ## `get()` method
 
+`get(numberOfMonths, timestamp)`
+
 This method is the main public method in this class.
 
 It returns an object that has the following public properties:
